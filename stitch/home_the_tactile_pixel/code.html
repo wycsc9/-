@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Tactile Pixel | Craft Your Mosaic</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Be+Vietnam+Pro:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "on-secondary-container": "#004e60",
+                "on-tertiary": "#fff2ce",
+                "surface-container-highest": "#dadddf",
+                "secondary": "#006479",
+                "surface": "#f5f6f7",
+                "on-secondary-fixed-variant": "#00586b",
+                "on-primary-fixed-variant": "#5f001b",
+                "error-dim": "#9f0519",
+                "tertiary-fixed": "#fdd404",
+                "error": "#b31b25",
+                "on-tertiary-fixed-variant": "#645300",
+                "surface-dim": "#d1d5d7",
+                "primary-fixed-dim": "#ff5773",
+                "tertiary-fixed-dim": "#edc600",
+                "inverse-on-surface": "#9b9d9e",
+                "inverse-primary": "#ff506f",
+                "surface-tint": "#b60d3d",
+                "on-background": "#2c2f30",
+                "tertiary-container": "#fdd404",
+                "tertiary": "#6d5a00",
+                "surface-container-high": "#e0e3e4",
+                "on-surface-variant": "#595c5d",
+                "secondary-dim": "#00576a",
+                "on-error-container": "#570008",
+                "primary-dim": "#a20033",
+                "on-tertiary-container": "#594a00",
+                "surface-container-low": "#eff1f2",
+                "tertiary-dim": "#5f4e00",
+                "secondary-container": "#77dfff",
+                "on-primary-container": "#4e0014",
+                "surface-variant": "#dadddf",
+                "outline-variant": "#abadae",
+                "on-error": "#ffefee",
+                "on-secondary": "#e0f6ff",
+                "surface-container-lowest": "#ffffff",
+                "inverse-surface": "#0c0f10",
+                "secondary-fixed": "#77dfff",
+                "on-primary": "#ffefef",
+                "on-tertiary-fixed": "#433700",
+                "on-primary-fixed": "#000000",
+                "primary-container": "#ff7386",
+                "primary": "#b60d3d",
+                "outline": "#757778",
+                "surface-container": "#e6e8ea",
+                "background": "#f5f6f7",
+                "on-surface": "#2c2f30",
+                "secondary-fixed-dim": "#48d3f8",
+                "error-container": "#fb5151",
+                "primary-fixed": "#ff7386",
+                "surface-bright": "#f5f6f7",
+                "on-secondary-fixed": "#003a47"
+              },
+              fontFamily: {
+                "headline": ["Plus Jakarta Sans"],
+                "body": ["Be Vietnam Pro"],
+                "label": ["Plus Jakarta Sans"]
+              },
+              borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+            },
+          },
+        }
+    </script>
+<style>
+        .bead-grid {
+            background-image: radial-gradient(circle, #dadddf 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center px-8 h-20 max-w-screen-2xl mx-auto">
+<div class="text-2xl font-black text-[#FF4D6D] dark:text-[#FF4D6D] tracking-tighter font-headline">
+                The Tactile Pixel
+            </div>
+<div class="hidden md:flex items-center gap-8 font-headline font-bold tracking-tight">
+<a class="text-[#FF4D6D] dark:text-[#FF4D6D] border-b-2 border-[#FF4D6D] pb-1" href="#">Home</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-[#FF4D6D] dark:hover:text-[#FF4D6D] transition-colors" href="#">Pattern Library</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-[#FF4D6D] dark:hover:text-[#FF4D6D] transition-colors" href="#">Photo to Bead Converter</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-[#FF4D6D] dark:hover:text-[#FF4D6D] transition-colors" href="#">About</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="px-6 py-2.5 rounded-full bg-primary text-on-primary font-bold hover:bg-primary-dim transition-all active:scale-95 duration-150">
+                    Sign In
+                </button>
+</div>
+</div>
+<div class="bg-slate-100/50 dark:bg-slate-800/50 h-[1px] w-full absolute bottom-0"></div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative min-h-[870px] flex items-center overflow-hidden bg-surface py-20 px-8">
+<div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div class="z-10">
+<span class="inline-block px-4 py-1.5 rounded-full bg-tertiary-container text-on-tertiary-container font-headline font-bold text-xs uppercase tracking-widest mb-6">
+                        Physical Pixels
+                    </span>
+<h1 class="font-headline font-extrabold text-6xl md:text-7xl lg:text-8xl text-on-surface leading-[1.05] tracking-tighter mb-8">
+                        Crafting <span class="text-primary italic">Mosaics</span> One Bead at a Time.
+                    </h1>
+<p class="text-on-surface-variant text-xl md:text-2xl max-w-xl mb-10 leading-relaxed">
+                        Transform your digital imagination into tangible art. The world's most sophisticated toolset for Perler bead enthusiasts.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<button class="px-10 py-5 rounded-full bg-primary text-on-primary font-headline font-extrabold text-lg shadow-xl shadow-primary/20 hover:bg-primary-dim transition-all hover:-translate-y-1 active:scale-95">
+                            Start Your Project
+                        </button>
+<button class="px-10 py-5 rounded-full bg-surface-container-highest text-on-surface font-headline font-extrabold text-lg hover:bg-surface-container-high transition-all active:scale-95">
+                            Explore Patterns
+                        </button>
+</div>
+</div>
+<div class="relative group">
+<div class="absolute -inset-4 bg-gradient-to-tr from-primary/20 to-secondary/20 rounded-[2rem] blur-2xl group-hover:blur-3xl transition-all"></div>
+<div class="relative rounded-[2rem] overflow-hidden shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-500 aspect-square">
+<img alt="Colorful perler bead art" class="w-full h-full object-cover" data-alt="Intricate colorful perler bead mosaic portrait" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSs9KBdh3uJqmGgcy_QdPSHMTPnojJ5ykp32hv29aOqnmvy6Y3oHEuchw5crM1JA1NNoS2w8m26FaenrPbEEMgQlpO_yKmHPtsr1LZFGCqzEe36fBF9Ist4FYfAP3-123JG3eBvmKtplO46K8wjbJEWYlrMUKhZOOxNsyAJzGRu__0XS0orFIPUaPNjIc0oKBP9LJopjl2Yz_NqYIp38ZkfQmMjbvT28ihbctYSeadAEdbq_tqjc3VOOCTbbaRGrO87vBzl0uLEi71"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+<div class="absolute bottom-8 left-8 right-8 p-6 glass-card bg-white/20 backdrop-blur-md rounded-2xl border border-white/30">
+<p class="text-white font-headline font-bold text-lg">"The Geometric Fox"</p>
+<p class="text-white/80 text-sm">Created by @ArtisanPixels • 4,200 Beads</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Decorative Bead Background Elements -->
+<div class="absolute top-1/4 right-0 w-32 h-32 bg-secondary/10 rounded-full blur-3xl"></div>
+<div class="absolute bottom-1/4 left-0 w-64 h-64 bg-tertiary/10 rounded-full blur-[100px]"></div>
+</section>
+<!-- Trending Patterns (Bento Grid Style) -->
+<section class="py-32 px-8 bg-surface-container-low">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+<div>
+<h2 class="font-headline font-extrabold text-4xl md:text-5xl text-on-surface tracking-tight mb-4">Trending Patterns</h2>
+<p class="text-on-surface-variant text-lg max-w-md">Community favorites ready for your next session.</p>
+</div>
+<a class="flex items-center gap-2 font-headline font-bold text-primary group" href="#">
+                        View All Collections 
+                        <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+<!-- Featured Pattern (Large) -->
+<div class="md:col-span-2 md:row-span-2 group relative overflow-hidden rounded-3xl bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-300">
+<div class="aspect-[4/5] overflow-hidden">
+<img alt="Retro Sunset Pattern" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Vibrant pixel art retro sunset landscape" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-p2P05Q-n852khMmxMjOUPqGClIsNbyEEiA8Xu5MEbMuVEeDGc25JocsUo9dALUdJU-Dd5Svhjb-MLNzS-uopqjJea8mYcXERc_4QSLFC-uTPdLYIHuoYr6s2ePmlLSvqBgWhYBQ0Qv-75DgK_po7nTc4YO9cMgHSmioIKKT2r3ku2FAgNjomVYEjTDv7sGvQE7aFTJ3x0upXBX-89DZvxQKFIZxBtMrI9Xmr5WzxTuz4f7yOeCdoje0xU1dGPp-qsvWxztjLgndo"/>
+</div>
+<div class="p-8">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="font-headline font-extrabold text-2xl mb-1">80's Vaporwave Horizon</h3>
+<p class="text-on-surface-variant">Expert Level • 12 Colors</p>
+</div>
+<span class="bg-primary/10 text-primary p-3 rounded-full">
+<span class="material-symbols-outlined" data-weight="fill">favorite</span>
+</span>
+</div>
+</div>
+</div>
+<!-- Small Patterns -->
+<div class="group relative overflow-hidden rounded-3xl bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-300">
+<div class="aspect-square overflow-hidden bg-slate-100">
+<img alt="Minimalist Planter" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Minimalist pixel art succulent in a pot" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJDycoJjclCvfR-RNHIQolhj1B_ihmDkk3uZ0hckj6AYUicOnQCdB-V1f_6S8QAIY0Jl2bEjA6jVSRLR3t9-iq3CMN-hMIirU0OOHQCBYiCqY46MfEdTZllQi72p8Y_0hzycvNLlymh-xkcTQj7PG75rlcqCiI3G9wnBYs1lJcNWgYqlO0t1xozoShFWo2rSpGVESR7WZBQb8X0813vbKJ-Tds0JkHPuzEHYygZmJFgaeKIkTQyufdv9TUzkF7BE5HIAmUOcQSzitF"/>
+</div>
+<div class="p-5">
+<h3 class="font-headline font-bold text-lg mb-1">Tiny Succulent</h3>
+<p class="text-on-surface-variant text-sm italic">Beginner • 4 Colors</p>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-3xl bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-300">
+<div class="aspect-square overflow-hidden bg-slate-100">
+<img alt="Abstract Geometry" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Abstract colorful geometric pixel pattern" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGlKcM3GRQ2YfCDeLismwe19AnUDmdjU9uvCfd74_bsbzGRsLWrIMnQ19E3MjbHmYwUMX23RLe5mkwH-Vff-egU3YpsRb9oDRf_jknTD_XpiOTtwYmh02J_lGDH124esxLAjBQHbQ7wwaAIJ2YoFhqlubLheCQPQF35xz7hIV5hL6n3mkw8wllq8pHR016vGxDbsMYciOwOvq3rg2kQVCD1uYoyG5NGKvvUDdwP_aENYx627n7u0l5N285YLsnyyUMMFnuCmgJXDln"/>
+</div>
+<div class="p-5">
+<h3 class="font-headline font-bold text-lg mb-1">Neon Core</h3>
+<p class="text-on-surface-variant text-sm italic">Intermediate • 8 Colors</p>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-3xl bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-300">
+<div class="aspect-square overflow-hidden bg-slate-100">
+<img alt="Retro Controller" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Classic retro game controller perler pattern" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2rmf215atJzg7qwQYQVwXTi9peHnfuGWcfDPR_Me3kveJDPt32cBCaEwSXH27-1-pBvkydJBh-LhktKxCdKKN6zl3PLx6np645TTNiEu9lLdvWgGaKp5Ah1kyxZoXh8mH_ewUEXD_C8i9xfH23U6qE8E7INb-ltc2wm6_jUmlu0j-II4yCeeC5gr5ZoBq22ipIzwoghA1f2VDYoqwAhrfy28PVMvqBous70De95WoVG4COAdsxgXwnEIcenxv9UdcQxK9sKTjEHfs"/>
+</div>
+<div class="p-5">
+<h3 class="font-headline font-bold text-lg mb-1">Arcade Soul</h3>
+<p class="text-on-surface-variant text-sm italic">Beginner • 6 Colors</p>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-3xl bg-surface-container-lowest shadow-sm hover:shadow-xl transition-all duration-300">
+<div class="aspect-square overflow-hidden bg-slate-100">
+<img alt="Modern Shapes" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Modern organic shapes in pixel art style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0EaoQG2H2IvrlwCTmvuQQ1cKzxXz4k0JwebWWPYc7L6d4Kzmk5fGZoWskttlBbruS-TKHoWYB7aFrz2W8KxwrMgp6-87Eub0lxXJ6oHtkzqrUlW1MpjvfooLCYbVZcu6lfiPqkKAZcAL067wjWatyA0H4zIrr4Zr7VINMhlh0-JX4SdbjWIloSr8g6JjTseRbJYRBFsP7-AgVaVOqB-3I9P15pr3EchmKpoHcjL5TbXwiQ3Tv5NP9yPtkvnfbuQmcq32iNovW-qix"/>
+</div>
+<div class="p-5">
+<h3 class="font-headline font-bold text-lg mb-1">Organic Drift</h3>
+<p class="text-on-surface-variant text-sm italic">Intermediate • 9 Colors</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Feature Section: Photo to Bead Converter -->
+<section class="py-32 px-8 bg-surface">
+<div class="max-w-7xl mx-auto">
+<div class="bg-secondary-container rounded-[3rem] overflow-hidden flex flex-col lg:flex-row relative">
+<!-- Bead Pattern Backdrop -->
+<div class="absolute inset-0 bead-grid opacity-20 pointer-events-none"></div>
+<div class="lg:w-1/2 p-12 lg:p-20 z-10">
+<h2 class="font-headline font-black text-5xl md:text-6xl text-on-secondary-container leading-tight mb-8">
+                            Any Photo.<br/>Every <span class="text-primary underline decoration-4 underline-offset-8">Pixel</span>.
+                        </h2>
+<p class="text-on-secondary-container text-xl mb-12 opacity-90 leading-relaxed">
+                            Our proprietary algorithm converts your favorite photos into accurate Perler bead patterns. We match your images to exact brand-specific bead colors.
+                        </p>
+<div class="space-y-6">
+<div class="flex items-center gap-6 group">
+<div class="w-14 h-14 rounded-full bg-on-secondary-container text-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-3xl">upload_file</span>
+</div>
+<div>
+<h4 class="font-headline font-extrabold text-on-secondary-container text-xl">Upload Your Photo</h4>
+<p class="text-on-secondary-container/70">JPEG, PNG or even HEIC formats accepted.</p>
+</div>
+</div>
+<div class="flex items-center gap-6 group">
+<div class="w-14 h-14 rounded-full bg-on-secondary-container text-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-3xl">grid_view</span>
+</div>
+<div>
+<h4 class="font-headline font-extrabold text-on-secondary-container text-xl">Customize Grid Size</h4>
+<p class="text-on-secondary-container/70">From single plates to massive wall murals.</p>
+</div>
+</div>
+<div class="flex items-center gap-6 group">
+<div class="w-14 h-14 rounded-full bg-on-secondary-container text-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-3xl">palette</span>
+</div>
+<div>
+<h4 class="font-headline font-extrabold text-on-secondary-container text-xl">Brand Match Technology</h4>
+<p class="text-on-secondary-container/70">Automatic matching to Hama, Perler, and Artkal.</p>
+</div>
+</div>
+</div>
+<button class="mt-12 px-10 py-5 rounded-full bg-on-secondary-container text-white font-headline font-extrabold text-lg hover:scale-105 transition-transform shadow-2xl shadow-black/10">
+                            Try the Converter
+                        </button>
+</div>
+<div class="lg:w-1/2 relative bg-secondary min-h-[400px] flex items-center justify-center p-12">
+<div class="relative w-full max-w-md aspect-square rounded-3xl shadow-3xl overflow-hidden border-[12px] border-white/20">
+<img alt="Converter Preview" class="w-full h-full object-cover" data-alt="Digital photo transitioning into a perler bead pattern" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGGEUPMuqTOvwk-UkGjA8rWbhft2J9ONeXOUSSO64aGKWOCNXxkhD8o_ySZa_BtTxBFe4gVCwqKQBFnxqryqxNgFVgJAPE5nTXPlPt-ORdDnrjnaR21BnoWwWY7fnUTpagh65lfWiQRdmTBfE8mbOS2ju0vIND5BNqYqUr7THxbMBFpYrP3ZQ4AsADkyl_JgAsC9jrq3NYkH2CDdFhRjGw4CCIVGKwn6sXRhsbuk-e3JxbC4OTIWYHIfPuMZNwn87BnwoWvV2u5VWZ"/>
+<!-- Overlaying Pattern Grid Simulation -->
+<div class="absolute inset-0 bg-white/5 bead-grid"></div>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="bg-white/90 backdrop-blur px-8 py-4 rounded-full font-headline font-bold text-secondary shadow-xl flex items-center gap-3">
+<span class="material-symbols-outlined animate-pulse">refresh</span>
+                                    Processing Pixels...
+                                </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950">
+<div class="flex flex-col md:flex-row justify-between items-center py-12 px-8 max-w-7xl mx-auto gap-6 font-['Be_Vietnam_Pro'] text-sm tracking-wide">
+<div class="flex flex-col items-center md:items-start gap-2">
+<div class="font-black text-[#FF4D6D] text-xl">The Tactile Pixel</div>
+<p class="text-slate-500 dark:text-slate-400">© 2024 The Tactile Pixel. Crafted with physical pixels.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="text-slate-500 dark:text-slate-400 hover:text-[#FF4D6D] transition-colors hover:underline" href="#">Instagram</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-[#FF4D6D] transition-colors hover:underline" href="#">Pinterest</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-[#FF4D6D] transition-colors hover:underline" href="#">TikTok</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-[#FF4D6D] transition-colors hover:underline" href="#">Terms of Service</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-[#FF4D6D] transition-colors hover:underline" href="#">Contact</a>
+</div>
+</div>
+</footer>
+</body></html>

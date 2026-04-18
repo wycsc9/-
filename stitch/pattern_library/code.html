@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Pattern Library | The Tactile Pixel</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;family=Be+Vietnam+Pro:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-secondary-container": "#004e60",
+              "on-tertiary": "#fff2ce",
+              "surface-container-highest": "#dadddf",
+              "secondary": "#006479",
+              "surface": "#f5f6f7",
+              "on-secondary-fixed-variant": "#00586b",
+              "on-primary-fixed-variant": "#5f001b",
+              "error-dim": "#9f0519",
+              "tertiary-fixed": "#fdd404",
+              "error": "#b31b25",
+              "on-tertiary-fixed-variant": "#645300",
+              "surface-dim": "#d1d5d7",
+              "primary-fixed-dim": "#ff5773",
+              "tertiary-fixed-dim": "#edc600",
+              "inverse-on-surface": "#9b9d9e",
+              "inverse-primary": "#ff506f",
+              "surface-tint": "#b60d3d",
+              "on-background": "#2c2f30",
+              "tertiary-container": "#fdd404",
+              "tertiary": "#6d5a00",
+              "surface-container-high": "#e0e3e4",
+              "on-surface-variant": "#595c5d",
+              "secondary-dim": "#00576a",
+              "on-error-container": "#570008",
+              "primary-dim": "#a20033",
+              "on-tertiary-container": "#594a00",
+              "surface-container-low": "#eff1f2",
+              "tertiary-dim": "#5f4e00",
+              "secondary-container": "#77dfff",
+              "on-primary-container": "#4e0014",
+              "surface-variant": "#dadddf",
+              "outline-variant": "#abadae",
+              "on-error": "#ffefee",
+              "on-secondary": "#e0f6ff",
+              "surface-container-lowest": "#ffffff",
+              "inverse-surface": "#0c0f10",
+              "secondary-fixed": "#77dfff",
+              "on-primary": "#ffefef",
+              "on-tertiary-fixed": "#433700",
+              "on-primary-fixed": "#000000",
+              "primary-container": "#ff7386",
+              "primary": "#b60d3d",
+              "outline": "#757778",
+              "surface-container": "#e6e8ea",
+              "background": "#f5f6f7",
+              "on-surface": "#2c2f30",
+              "secondary-fixed-dim": "#48d3f8",
+              "error-container": "#fb5151",
+              "primary-fixed": "#ff7386",
+              "surface-bright": "#f5f6f7",
+              "on-secondary-fixed": "#003a47"
+            },
+            fontFamily: {
+              "headline": ["Plus Jakarta Sans"],
+              "body": ["Be Vietnam Pro"],
+              "label": ["Plus Jakarta Sans"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .bead-grid-bg {
+            background-image: radial-gradient(circle, #dadddf 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center px-8 h-20 max-w-screen-2xl mx-auto">
+<div class="text-2xl font-black text-[#FF4D6D] dark:text-[#FF4D6D] tracking-tighter font-headline">The Tactile Pixel</div>
+<nav class="hidden md:flex items-center gap-8 font-headline font-bold tracking-tight">
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-[#FF4D6D] dark:hover:text-[#FF4D6D] transition-colors" href="#">Home</a>
+<a class="text-[#FF4D6D] dark:text-[#FF4D6D] border-b-2 border-[#FF4D6D] pb-1" href="#">Pattern Library</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-[#FF4D6D] dark:hover:text-[#FF4D6D] transition-colors" href="#">Photo to Bead Converter</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-[#FF4D6D] dark:hover:text-[#FF4D6D] transition-colors" href="#">About</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="px-6 py-2 rounded-full font-headline font-bold text-on-primary bg-primary hover:bg-primary-dim transition-all active:scale-95">Sign In</button>
+</div>
+</div>
+<div class="bg-slate-100/50 dark:bg-slate-800/50 h-[1px] w-full absolute bottom-0"></div>
+</header>
+<main class="pt-32 pb-20 px-8 max-w-screen-2xl mx-auto">
+<!-- Header Section -->
+<div class="mb-12 flex flex-col md:flex-row md:items-end justify-between gap-6">
+<div>
+<h1 class="text-5xl md:text-6xl font-headline font-extrabold tracking-tighter text-on-background mb-4">Pattern Library</h1>
+<p class="text-on-surface-variant max-w-xl text-lg leading-relaxed">Browse our curated collection of physical pixel designs. Every pattern is optimized for Perler bead enthusiasts and digital curators.</p>
+</div>
+<!-- Search Bar Integration -->
+<div class="relative w-full md:w-96 group">
+<input class="w-full h-14 pl-14 pr-6 rounded-xl bg-surface-container-lowest border-none shadow-sm focus:ring-2 focus:ring-primary/40 text-on-surface placeholder:text-outline transition-all" placeholder="Search patterns..." type="text"/>
+<span class="material-symbols-outlined absolute left-5 top-1/2 -translate-y-1/2 text-outline group-focus-within:text-primary transition-colors">search</span>
+</div>
+</div>
+<div class="flex flex-col lg:flex-row gap-12">
+<!-- Sidebar Filters -->
+<aside class="w-full lg:w-72 flex-shrink-0 space-y-10">
+<div class="space-y-6">
+<h3 class="font-headline font-extrabold text-sm uppercase tracking-widest text-primary">Category</h3>
+<div class="space-y-3">
+<label class="flex items-center gap-3 group cursor-pointer">
+<input checked="" class="rounded-md border-outline-variant text-primary focus:ring-primary h-5 w-5" type="checkbox"/>
+<span class="text-on-surface group-hover:text-primary transition-colors">Nature &amp; Plants</span>
+</label>
+<label class="flex items-center gap-3 group cursor-pointer">
+<input class="rounded-md border-outline-variant text-primary focus:ring-primary h-5 w-5" type="checkbox"/>
+<span class="text-on-surface group-hover:text-primary transition-colors">Pop Culture</span>
+</label>
+<label class="flex items-center gap-3 group cursor-pointer">
+<input class="rounded-md border-outline-variant text-primary focus:ring-primary h-5 w-5" type="checkbox"/>
+<span class="text-on-surface group-hover:text-primary transition-colors">Abstract Geometric</span>
+</label>
+<label class="flex items-center gap-3 group cursor-pointer">
+<input class="rounded-md border-outline-variant text-primary focus:ring-primary h-5 w-5" type="checkbox"/>
+<span class="text-on-surface group-hover:text-primary transition-colors">Animals</span>
+</label>
+</div>
+</div>
+<div class="space-y-6">
+<h3 class="font-headline font-extrabold text-sm uppercase tracking-widest text-primary">Difficulty</h3>
+<div class="grid grid-cols-1 gap-2">
+<button class="flex items-center justify-between px-4 py-3 rounded-lg bg-surface-container-low hover:bg-surface-container-high transition-colors text-left">
+<span class="font-medium">Beginner</span>
+<span class="text-xs font-bold px-2 py-0.5 rounded-full bg-tertiary-container text-on-tertiary-container">EASY</span>
+</button>
+<button class="flex items-center justify-between px-4 py-3 rounded-lg border-2 border-primary/20 bg-surface-container-lowest text-on-surface shadow-sm">
+<span class="font-bold">Intermediate</span>
+<span class="text-xs font-bold px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container">MED</span>
+</button>
+<button class="flex items-center justify-between px-4 py-3 rounded-lg bg-surface-container-low hover:bg-surface-container-high transition-colors text-left">
+<span class="font-medium">Expert</span>
+<span class="text-xs font-bold px-2 py-0.5 rounded-full bg-primary-container text-on-primary-container">PRO</span>
+</button>
+</div>
+</div>
+<div class="space-y-6">
+<h3 class="font-headline font-extrabold text-sm uppercase tracking-widest text-primary">Color Count</h3>
+<div class="px-2">
+<input class="w-full h-2 bg-surface-container-high rounded-full appearance-none accent-primary cursor-pointer" max="50" min="1" type="range" value="12"/>
+<div class="flex justify-between mt-3 text-xs font-bold text-outline">
+<span>1 COLOR</span>
+<span>50+ COLORS</span>
+</div>
+</div>
+</div>
+</aside>
+<!-- Main Grid Content -->
+<div class="flex-grow">
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+<!-- Pattern Card 1 -->
+<div class="group bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+<div class="aspect-square bead-grid-bg p-8 flex items-center justify-center relative overflow-hidden">
+<img alt="" class="w-48 h-48 object-contain drop-shadow-2xl group-hover:scale-110 transition-transform duration-500" data-alt="Stylized pixel art of a vibrant red fox head" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqbYUNzNQmAXTnHxewbI-icXrooFo_MNUlnc90HNeu0yMhlTK0k3-NDjOnQfMe5fr4BuFsvWho9xEXJA6N7HfNQQUfGSDIBURsVlCKulaMgEv49mkBI6YcWaPhhMOvS4qROBeJOZXDYJgzrIU13XZg4g8ibBq80CznSiwU9EcqDmi2-l69S7_qjSwPUUJtZk6bqOrzqjuQpewo2nGVEmXp3v6epwRebsYgb5ertUYmz0hT39oVLFZBvGvn7_xANAksXS4kbL-WzKWa"/>
+<div class="absolute top-4 right-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-[10px] font-black tracking-tighter text-primary shadow-sm uppercase">Original</div>
+</div>
+<div class="p-6">
+<div class="flex items-start justify-between mb-2">
+<h4 class="text-xl font-headline font-extrabold tracking-tight">Cinnabar Fox</h4>
+<span class="material-symbols-outlined text-outline hover:text-primary cursor-pointer transition-colors" data-icon="favorite">favorite</span>
+</div>
+<div class="flex items-center gap-4 text-sm font-medium text-on-surface-variant">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px]" data-icon="palette">palette</span>
+<span>8 Colors</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px]" data-icon="grid_on">grid_on</span>
+<span>29x29 Boards</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Pattern Card 2 -->
+<div class="group bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+<div class="aspect-square bead-grid-bg p-8 flex items-center justify-center relative overflow-hidden">
+<img alt="" class="w-56 h-40 object-contain drop-shadow-2xl group-hover:rotate-3 transition-transform duration-500" data-alt="Minimalist geometric mountains bead pattern in blue tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCKb6xvEmF7eMKyy0Qmuxc956WwoYB-HtIEn5DRC8S8hmCWYohJZxsOxraayWIhbbZxD3D0GGzHSGULzCw8iCS1MLVOP1hoFc7c7kykxR8dr-ghjfu29OJpKb9xsllQHi3fo9qqXBvF-ky-NefjV_xBrlPnWIo1RyUuAIGmw1ZZASAHnKEgKFftgORRsrsDdpAlFaq22OTsIDlV4RrYvZtkTpCCAo7siM4CnUU5znSguHjj3xQXqdqvczNYwlOOOy2IYYHTENvm4jIO"/>
+</div>
+<div class="p-6">
+<div class="flex items-start justify-between mb-2">
+<h4 class="text-xl font-headline font-extrabold tracking-tight">Midnight Range</h4>
+<span class="material-symbols-outlined text-outline hover:text-primary cursor-pointer transition-colors" data-icon="favorite">favorite</span>
+</div>
+<div class="flex items-center gap-4 text-sm font-medium text-on-surface-variant">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px]" data-icon="palette">palette</span>
+<span>4 Colors</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px]" data-icon="grid_on">grid_on</span>
+<span>Large Single</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Pattern Card 3 -->
+<div class="group bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+<div class="aspect-square bead-grid-bg p-8 flex items-center justify-center relative overflow-hidden">
+<img alt="" class="w-48 h-48 object-contain drop-shadow-2xl group-hover:scale-95 transition-transform duration-500" data-alt="Abstract colorful circular gradient pattern pixelated" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBp1xdheXZGNHp-ynC-1DFYETjAV7xgVaMxCY0eKy3cUKpuvBByOAbVmABxTaMh2-EK6aT0dkrpINqr_k7vYvSH5cgXkVvMWaQh-lpucYwMlP1-HKbhTgE8AiNlGSI5kkYFZNd5FqxjrEisd0gADC-_fzBxXhvljD0OqDxs3s3Fez2OEnJpHW3FJP8EmrHlGJ2UZo8rk3zsTjDgMy9ga1AUxblny9gUoYNxkr9W5vi1jHzohQdN3NmCqdvWFWNnC68tz7PiL0EzTdAL"/>
+</div>
+<div class="p-6">
+<div class="flex items-start justify-between mb-2">
+<h4 class="text-xl font-headline font-extrabold tracking-tight">Prism Vortex</h4>
+<span class="material-symbols-outlined text-outline hover:text-primary cursor-pointer transition-colors" data-icon="favorite">favorite</span>
+</div>
+<div class="flex items-center gap-4 text-sm font-medium text-on-surface-variant">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px]" data-icon="palette">palette</span>
+<span>24 Colors</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px]" data-icon="grid_on">grid_on</span>
+<span>4-Grid Mosaic</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Pattern Card 4 -->
+<div class="group bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+<div class="aspect-square bead-grid-bg p-8 flex items-center justify-center relative overflow-hidden">
+<img alt="" class="w-52 h-52 object-contain drop-shadow-2xl group-hover:-translate-y-2 transition-transform duration-500" data-alt="Retro 80s neon synthwave sun pixel art" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxDFvvJAdVmzr1kdIs5PD5pLT1o6W3Xti31H6aSCYGJWlhAsMMk39mEvvsTIlQCu6VaIyiMrHflQopjdVS5nLzJrVDt8fEG2Dn85EsiYMlFMp1nLb4Br20r2qVYCNVWtUMIv_UleLm3nXN5MbOhCpWtebEK7V4kbC3I3_AB7iF4Xl98E8VJNxGYPcVxAI2tOCNrcnc-e6P3537q_jkT9wQcLG3d00Ctx_72bV_FgWB3Rp5i1VvIm4gRdEWgGoNDslMPsS0OZ6Fd2L_"/>
+</div>
+<div class="p-6">
+<div class="flex items-start justify-between mb-2">
+<h4 class="text-xl font-headline font-extrabold tracking-tight">Cyber Sunset</h4>
+<span class="material-symbols-outlined text-outline hover:text-primary cursor-pointer transition-colors" data-icon="favorite">favorite</span>
+</div>
+<div class="flex items-center gap-4 text-sm font-medium text-on-surface-variant">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px]" data-icon="palette">palette</span>
+<span>12 Colors</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px]" data-icon="grid_on">grid_on</span>
+<span>Portrait Large</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Pattern Card 5 -->
+<div class="group bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+<div class="aspect-square bead-grid-bg p-8 flex items-center justify-center relative overflow-hidden">
+<img alt="" class="w-44 h-44 object-contain drop-shadow-2xl group-hover:scale-105 transition-transform duration-500" data-alt="Close up of a pixel art monstera leaf" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAj-yITc65BWSf7_65qSbcikFKTLPoTdGxWBlLEI9hMf70pSpITxAN-MtVR5954mg0LaZIY9fYCo_hvcgrI9kwIl679Nj-R7mN3IG4HFTFI7HLw4hJaXybE8q0Nyb7PUUVYAiT-NAVYE97KsaSPIdI6RPlVeafW8laMlbCFI58z3ch0xNUCFbRh9yaGE3H1rTnfizq2IaZqG7W--d8RFHBplTJc0xRIGj18ooXdqHM5QC2yLSB-jkUPMG7xaF0MyKFpYvHQdAgDOE2s"/>
+</div>
+<div class="p-6">
+<div class="flex items-start justify-between mb-2">
+<h4 class="text-xl font-headline font-extrabold tracking-tight">Emerald Monstera</h4>
+<span class="material-symbols-outlined text-outline hover:text-primary cursor-pointer transition-colors" data-icon="favorite">favorite</span>
+</div>
+<div class="flex items-center gap-4 text-sm font-medium text-on-surface-variant">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px]" data-icon="palette">palette</span>
+<span>6 Colors</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px]" data-icon="grid_on">grid_on</span>
+<span>Circular Board</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Pattern Card 6 -->
+<div class="group bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300">
+<div class="aspect-square bead-grid-bg p-8 flex items-center justify-center relative overflow-hidden">
+<img alt="" class="w-52 h-52 object-contain drop-shadow-2xl group-hover:rotate-12 transition-transform duration-500" data-alt="Complex kaleidoscopic bead pattern with many colors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEy_Eli-Pz7prnRcrCSdg8ktoXxv7jxIFnCPWQwDONOtzewRVBnc3cMhoyY_lcS87wOD2grBhXbEiRIkgVjm7Av-Tlwx6EJOQNvt9e9xpUxUEevu0f_k0gFW0q4UmsHs29YJb5hZqnrzbENKOlzHKlQDyv18Wo74iVlEl9PuhasvvfFJF4tqLYL5pJZwWcqYrvI0sF44X4vDTLCEMt3CwACENo4bHHFYz6wdOyTQmjrCOw8XUGdkhwyzjCz0XpLaZ2jNsrvSQNpTwr"/>
+<div class="absolute top-4 right-4 bg-primary text-on-primary px-3 py-1 rounded-full text-[10px] font-black tracking-tighter shadow-md uppercase">Featured</div>
+</div>
+<div class="p-6">
+<div class="flex items-start justify-between mb-2">
+<h4 class="text-xl font-headline font-extrabold tracking-tight">Kaleido-Core</h4>
+<span class="material-symbols-outlined text-outline hover:text-primary cursor-pointer transition-colors" data-icon="favorite">favorite</span>
+</div>
+<div class="flex items-center gap-4 text-sm font-medium text-on-surface-variant">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px]" data-icon="palette">palette</span>
+<span>32 Colors</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px]" data-icon="grid_on">grid_on</span>
+<span>6x6 Mega Board</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Pagination -->
+<div class="mt-16 flex items-center justify-center gap-2">
+<button class="w-10 h-10 flex items-center justify-center rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors text-on-surface">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<button class="w-10 h-10 flex items-center justify-center rounded-lg bg-primary text-on-primary font-bold">1</button>
+<button class="w-10 h-10 flex items-center justify-center rounded-lg bg-surface-container-low hover:bg-surface-container-high transition-colors font-bold">2</button>
+<button class="w-10 h-10 flex items-center justify-center rounded-lg bg-surface-container-low hover:bg-surface-container-high transition-colors font-bold">3</button>
+<span class="px-2 text-outline">...</span>
+<button class="w-10 h-10 flex items-center justify-center rounded-lg bg-surface-container-low hover:bg-surface-container-high transition-colors font-bold">12</button>
+<button class="w-10 h-10 flex items-center justify-center rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors text-on-surface">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950">
+<div class="flex flex-col md:flex-row justify-between items-center py-12 px-8 max-w-7xl mx-auto gap-6 font-['Be_Vietnam_Pro'] text-sm tracking-wide">
+<div class="flex flex-col items-center md:items-start gap-4">
+<div class="font-black text-[#FF4D6D] text-xl font-headline">The Tactile Pixel</div>
+<p class="text-slate-500 dark:text-slate-400">© 2024 The Tactile Pixel. Crafted with physical pixels.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="text-slate-500 dark:text-slate-400 hover:text-[#FF4D6D] transition-colors hover:underline" href="#">Instagram</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-[#FF4D6D] transition-colors hover:underline" href="#">Pinterest</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-[#FF4D6D] transition-colors hover:underline" href="#">TikTok</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-[#FF4D6D] transition-colors hover:underline" href="#">Terms of Service</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-[#FF4D6D] transition-colors hover:underline" href="#">Contact</a>
+</div>
+</div>
+</footer>
+</body></html>

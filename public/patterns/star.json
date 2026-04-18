@@ -1,0 +1,26 @@
+{
+  "id": "star",
+  "title": "幸运星",
+  "width": 11,
+  "height": 11,
+  "grid": [
+    ["empty","empty","empty","empty","yellow","yellow","yellow","empty","empty","empty","empty"],
+    ["empty","empty","empty","yellow","yellow","yellow","yellow","yellow","empty","empty","empty"],
+    ["empty","empty","yellow","yellow","yellow","yellow","yellow","yellow","yellow","empty","empty"],
+    ["empty","yellow","yellow","yellow","yellow","yellow","yellow","yellow","yellow","yellow","empty"],
+    ["yellow","yellow","yellow","yellow","yellow","yellow","yellow","yellow","yellow","yellow","yellow"],
+    ["empty","yellow","yellow","yellow","yellow","yellow","yellow","yellow","yellow","yellow","empty"],
+    ["empty","empty","yellow","yellow","yellow","yellow","yellow","yellow","yellow","empty","empty"],
+    ["empty","empty","empty","yellow","yellow","yellow","yellow","yellow","empty","empty","empty"],
+    ["empty","empty","empty","empty","yellow","yellow","yellow","empty","empty","empty","empty"],
+    ["empty","empty","empty","empty","empty","yellow","empty","empty","empty","empty","empty"],
+    ["empty","empty","empty","empty","empty","empty","empty","empty","empty","empty","empty"]
+  ],
+  "palette": [
+    { "id": "empty", "code": "C00", "name": "空白", "rgb": [248, 244, 236] },
+    { "id": "yellow", "code": "C06", "name": "黄色", "rgb": [250, 220, 70] }
+  ],
+  "usage": {
+    "yellow": 53
+  }
+}

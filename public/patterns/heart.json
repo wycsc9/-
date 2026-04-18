@@ -1,0 +1,26 @@
+{
+  "id": "heart",
+  "title": "像素爱心",
+  "width": 10,
+  "height": 9,
+  "grid": [
+    ["empty","red","red","empty","empty","empty","empty","red","red","empty"],
+    ["red","pink","pink","red","empty","empty","red","pink","pink","red"],
+    ["red","pink","pink","pink","red","red","pink","pink","pink","red"],
+    ["empty","red","pink","pink","pink","pink","pink","pink","red","empty"],
+    ["empty","empty","red","pink","pink","pink","pink","red","empty","empty"],
+    ["empty","empty","empty","red","pink","pink","red","empty","empty","empty"],
+    ["empty","empty","empty","empty","red","red","empty","empty","empty","empty"],
+    ["empty","empty","empty","empty","red","red","empty","empty","empty","empty"],
+    ["empty","empty","empty","empty","empty","empty","empty","empty","empty","empty"]
+  ],
+  "palette": [
+    { "id": "empty", "code": "C00", "name": "空白", "rgb": [248, 244, 236] },
+    { "id": "red", "code": "C03", "name": "红色", "rgb": [220, 40, 40] },
+    { "id": "pink", "code": "C04", "name": "粉色", "rgb": [255, 140, 180] }
+  ],
+  "usage": {
+    "red": 20,
+    "pink": 24
+  }
+}
